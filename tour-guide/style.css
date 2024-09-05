@@ -1,0 +1,116 @@
+/* Packages Section */
+.packages {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 60px 0;
+    text-align: center;
+  }
+  body{
+
+  }
+  
+  .packages .heading {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .packages .heading span {
+    color: #007bff; /* Blue color for emphasis */
+    text-transform: uppercase;
+  }
+  
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between boxes */
+    justify-content: center;
+  }
+  
+  .box {
+    background-color: #ffffff; /* White background */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    position: relative;
+    opacity: 0;
+    animation: fadeInUp 1s forwards; /* Fade-in and slide-up animation */
+  }
+  
+  .box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .box .content {
+    padding: 20px;
+  }
+  
+  .box h3 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .box p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .box .stars {
+    color: #ffcc00; /* Gold color for stars */
+    margin-bottom: 15px;
+  }
+  
+  .box .stars i {
+    font-size: 16px;
+    margin-right: 2px;
+  }
+  
+  .box .price {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .box .price span {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .box .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff; /* Blue background */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .box .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarges button on hover */
+  }
+  
+  .box:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  /* Animation Keyframes */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
